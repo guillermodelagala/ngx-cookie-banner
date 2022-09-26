@@ -1,7 +1,5 @@
 {
-  "packages": [
-    "projects/ngx-cookie-banner"
-  ],
+  "packages": ["projects/ngx-cookie-banner-g"],
   "version": "0.1.1",
   "command": {
     "version": {

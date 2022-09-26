@@ -1,5 +1,7 @@
 # ngx-cookie-banner
 
+Forked from https://github.com/exportarts/ngx-cookie-banner
+
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![npm](https://img.shields.io/npm/v/ngx-cookie-banner.svg)](https://www.npmjs.com/package/ngx-cookie-banner)
 [![Build Status](https://travis-ci.com/exportarts/ngx-cookie-banner.svg?branch=master)](https://travis-ci.com/exportarts/ngx-cookie-banner)
@@ -20,24 +22,22 @@ functionality and removed much of the opinionated styles and behaviour.
 **Import NgxCookieBannerModule**
 
 ```ts
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgxCookieBannerModule } from 'ngx-cookie-banner';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgxCookieBannerModule } from "ngx-cookie-banner";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgxCookieBannerModule.forRoot({
-      cookieName: 'ngx-cookie-banner-demo-app',
-    })
+      cookieName: "ngx-cookie-banner-demo-app",
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 **Use the component**
@@ -46,12 +46,12 @@ export class AppModule { }
 <!-- app.component.html -->
 
 <ngx-cookie-banner #cookie>
-    <div class="banner-inner">
-        <span>
-            We use Cookies!
-            <a role="button" (click)="cookie.dismiss()">dismiss</a>
-        </span>
-    </div>
+  <div class="banner-inner">
+    <span>
+      We use Cookies!
+      <a role="button" (click)="cookie.dismiss()">dismiss</a>
+    </span>
+  </div>
 </ngx-cookie-banner>
 ```
 
@@ -59,11 +59,11 @@ export class AppModule { }
 /* app.component.scss */
 
 .banner-inner {
-    background: red;
+  background: red;
 }
 .banner-inner a {
-    font-weight: bold;
-    cursor: pointer;
+  font-weight: bold;
+  cursor: pointer;
 }
 ```
 
@@ -71,13 +71,12 @@ export class AppModule { }
 /* app.component.ts */
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
-  
-  @ViewChild('cookie', { static: true })
+  @ViewChild("cookie", { static: true })
   banner: NgxCookieBannerComponent;
 
   private _cookieSub: Subscription;
@@ -91,6 +90,5 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   ngOnDestroy() {
     this._cookieSub.unsubscribe();
   }
-
 }
 ```
