@@ -1,10 +1,10 @@
 {
   "name": "ngx-cookie-banner-g",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "postinstall": "lerna bootstrap",
     "demo": "ng serve demo",
-    "build": "ng build ngx-cookie-banner-g --prod",
+    "build": "ng build ngx-cookie-banner",
     "create-release": "lerna version --conventional-commits"
   },
   "license": "MIT",

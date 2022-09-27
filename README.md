@@ -1,4 +1,4 @@
-# ngx-cookie-banner
+# ngx-cookie-banner-g
 
 Forked from https://github.com/exportarts/ngx-cookie-banner
 
@@ -17,7 +17,7 @@ functionality and removed much of the opinionated styles and behaviour.
 
 **Install the dependency**
 
-`npm i --save-exact ngx-cookie-banner`
+`npm i --save-exact ngx-cookie-banner-g`
 
 **Import NgxCookieBannerModule**
 

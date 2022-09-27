@@ -14,7 +14,7 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
-      "ngx-cookie-banner-g": ["dist/ngx-cookie-banner-g"]
+      "ngx-cookie-banner": ["dist/ngx-cookie-banner"]
     }
   },
   "angularCompilerOptions": {

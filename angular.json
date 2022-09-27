@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-cookie-banner-g": {
+    "ngx-cookie-banner": {
       "projectType": "library",
-      "root": "projects/ngx-cookie-banner-g",
-      "sourceRoot": "projects/ngx-cookie-banner-g/src",
+      "root": "projects/ngx-cookie-banner",
+      "sourceRoot": "projects/ngx-cookie-banner/src",
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-cookie-banner-g/tsconfig.lib.json",
-            "project": "projects/ngx-cookie-banner-g/ng-package.json"
+            "tsConfig": "projects/ngx-cookie-banner/tsconfig.lib.json",
+            "project": "projects/ngx-cookie-banner/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-cookie-banner-g/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-cookie-banner/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-cookie-banner-g/src/test.ts",
-            "tsConfig": "projects/ngx-cookie-banner-g/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-cookie-banner-g/karma.conf.js"
+            "main": "projects/ngx-cookie-banner/src/test.ts",
+            "tsConfig": "projects/ngx-cookie-banner/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-cookie-banner/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-cookie-banner-g/tsconfig.lib.json",
-              "projects/ngx-cookie-banner-g/tsconfig.spec.json"
+              "projects/ngx-cookie-banner/tsconfig.lib.json",
+              "projects/ngx-cookie-banner/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -144,5 +144,5 @@
   "cli": {
     "analytics": "3424a3a9-776d-43e3-9bfd-9e8a122863af"
   },
-  "defaultProject": "ngx-cookie-banner-g"
+  "defaultProject": "ngx-cookie-banner"
 }
