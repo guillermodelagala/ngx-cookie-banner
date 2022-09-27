@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.1.0 (2022-09-27)
+
+
+### Bug Fixes
+
+* add missing stuff to public api ([a7776eb](https://github.com/guillermodelagala/ngx-cookie-banner/commit/a7776eb3f8c20789aab35544cdf5be8a0ca3c5dd))
+* allow ng9 in peerDependencies ([a895065](https://github.com/guillermodelagala/ngx-cookie-banner/commit/a895065ef1add7d37bc4fef202f458899a5c568f))
+* **license:** add license information to package.json ([201957c](https://github.com/guillermodelagala/ngx-cookie-banner/commit/201957ca7f828746a3cba55732284f245491cd42))
+
+
+### Features
+
+* add ngx-cookie-banner lib and demo app ([ba2acf8](https://github.com/guillermodelagala/ngx-cookie-banner/commit/ba2acf8b9282cf0fd14bff4fc885b0e6d9e90c1a))
+* manage project with lerna ([7fac46e](https://github.com/guillermodelagala/ngx-cookie-banner/commit/7fac46e1933bfec5c482afbd5b11a6f83306838e))
+
+
+
+
+
 ## [0.1.1](https://github.com/exportarts/ngx-cookie-banner/compare/v0.1.0...v0.1.1) (2020-05-29)
 
 
