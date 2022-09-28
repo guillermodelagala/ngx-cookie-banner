@@ -1,4 +1,4 @@
-# ngx-cookie-banner-g
+# ngx-cookie-banner-gg
 
 Forked from https://github.com/exportarts/ngx-cookie-banner
 

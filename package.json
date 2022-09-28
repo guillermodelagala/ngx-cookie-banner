@@ -1,13 +1,14 @@
 {
   "name": "ngx-cookie-banner-g",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "postinstall": "lerna bootstrap",
     "demo": "ng serve demo",
-    "build": "ng build ngx-cookie-banner",
+    "build": "ng build ngx-cookie-banner --configuration production",
     "create-release": "lerna version --conventional-commits"
   },
   "license": "MIT",
+  "private": false,
   "dependencies": {
     "@angular/animations": "14.2.3",
     "@angular/common": "14.2.3",
