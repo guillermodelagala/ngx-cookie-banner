@@ -4,7 +4,12 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "demo": "ng serve demo",
-    "build": "ng build ngx-cookie-banner --configuration production",
+    "build_lib": "ng build ngx-cookie-banner --configuration production",
+    "copy-license": "cp ./LICENSE ./dist/ngx-cookie-banner",
+    "copy-readme": "cp ./README.md ./dist/ngx-cookie-banner",
+    "copy-files": "npm run copy-license && npm run copy-readme",
+    "npm_pack": "npm run copy-files && cd dist/ngx-cookie-banner && npm pack",
+    "package": "npm run build_lib && npm run npm_pack",
     "create-release": "lerna version --conventional-commits"
   },
   "license": "MIT",
