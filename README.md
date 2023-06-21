@@ -17,7 +17,7 @@ functionality and removed much of the opinionated styles and behaviour.
 
 **Install the dependency**
 
-`npm i --save-exact ngx-cookie-banner-g`
+`npm i --save-exact ngx-cookie-banner-gg`
 
 **Import NgxCookieBannerModule**
 

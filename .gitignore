@@ -48,3 +48,5 @@ Thumbs.db
 .angular
 
 lerna-debug.log
+
+/projects/ngx-cookie-banner/node_modules
