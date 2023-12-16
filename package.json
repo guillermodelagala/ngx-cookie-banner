@@ -1,6 +1,6 @@
 {
   "name": "ngx-cookie-banner-g",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "scripts": {
     "postinstall": "lerna bootstrap",
     "demo": "ng serve demo",
